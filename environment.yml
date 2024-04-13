@@ -1,8 +1,10 @@
 name: snowpark-de-ml
 channels:
   - https://repo.anaconda.com/pkgs/snowflake
+  - nodefaults
 dependencies:
   - python=3.10
+  - snowflake-snowpark-python
   - pandas=1.5.3
   - notebook=7.0.6
   - scikit-learn=1.3.0
@@ -10,7 +12,9 @@ dependencies:
   - snowflake-snowpark-python[pandas]=1.11.1
   - streamlit==1.26.0
   - boto3
+  - openssl=1.1.1
   - pip
   - pip:
     - snowflake-ml-python==1.2.2
     - snowflake==0.6.0
+    - snowflake-cli-labs==0.2.9
